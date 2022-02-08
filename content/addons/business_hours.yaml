@@ -1,0 +1,43 @@
+hours:
+  -
+    weekday: Monday
+    start_time: '08:00'
+    end_time: '16:00'
+    24_hours: false
+    closed: false
+  -
+    weekday: Tuesday
+    start_time: '08:00'
+    end_time: '16:00'
+    24_hours: false
+    closed: false
+  -
+    weekday: Wednesday
+    start_time: '08:00'
+    end_time: '16:00'
+    24_hours: false
+    closed: false
+  -
+    weekday: Thursday
+    start_time: '08:00'
+    end_time: '16:00'
+    24_hours: false
+    closed: false
+  -
+    weekday: Friday
+    start_time: '08:00'
+    end_time: '16:00'
+    24_hours: false
+    closed: false
+  -
+    weekday: Saturday
+    start_time: '08:00'
+    end_time: '16:00'
+    24_hours: false
+    closed: true
+  -
+    weekday: Sunday
+    start_time: '08:00'
+    end_time: '16:00'
+    24_hours: false
+    closed: true

@@ -1,0 +1,19 @@
+{
+    "name": "lucky-media/business-hours",
+    "autoload": {
+        "psr-4": {
+            "LuckyMedia\\BusinessHours\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Business Hours",
+            "description": "Easily create, manage and display business hours in a modern and stylish layout."
+        },
+        "laravel": {
+            "providers": [
+                "LuckyMedia\\BusinessHours\\ServiceProvider"
+            ]
+        }
+    }
+}
