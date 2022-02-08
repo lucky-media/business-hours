@@ -45,18 +45,18 @@ On your frontend you can make use of the `business_hours` tag to iterate through
 ```
 
 Params:
-- `weekday` (string)
-- - Weekday label
-- `closed` (boolean)
-- - Is the business closed on this day
-- `24_hours` (boolean)
-- - Is the business working 24hrs on this day
-- `start_time` (string)
-- - What time does the business start on this day
-- `end_time` (string)
-- - What time does the business end on this day
-- `is_open` (boolean)
-- - Is the business open at this moment
+* `weekday` (string)
+  * Weekday label
+* `closed` (boolean)
+  * Is the business closed on this day
+* `24_hours` (boolean)
+  * Is the business working 24hrs on this day
+* `start_time` (string)
+  * What time does the business start on this day
+* `end_time` (string)
+  * What time does the business end on this day
+* `is_open` (boolean)
+  * Is the business open at this moment
 
 
 If you need to display the exeptions you can use the following:
@@ -74,12 +74,13 @@ If you need to display the exeptions you can use the following:
 ```
 
 Params:
-- `reason` (bard)
-- - Bard field to write down the reason for the exception
-- `start_date` (date)
-- - Start date of the exception
-- `end_date` (date)
-- - End date of the exception
+
+* `reason` (bard)
+  * Bard field to write down the reason for the exception
+* `start_date` (date)
+  * Start date of the exception
+* `end_date` (date)
+  * End date of the exception
 
 
 ## Common Gotcha's
