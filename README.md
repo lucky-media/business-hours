@@ -45,6 +45,7 @@ On your frontend you can make use of the `business_hours` tag to iterate through
 ```
 
 Params:
+
 * `weekday` (string)
   * Weekday label
 * `closed` (boolean)
