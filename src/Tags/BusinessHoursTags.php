@@ -21,17 +21,17 @@ class BusinessHoursTags extends Tags
 
     public function index(): array
     {
-        $days = collect($this->defaults['hours']->value())
+        $days = collect($this->defaults['hours'])
             ->map(function ($day, $key) {
                 return [
                     'is_open' => $this->isOpen($day, $key),
                     'is_past' => $this->isPast($day, $key),
-                    'enabled' => $day['enabled']->value(),
-                    'weekday' => $day['weekday']->value(),
-                    'start_time' => $this->formatDate($day['start_time']->value()),
-                    'end_time' => $this->formatDate($day['end_time']->value()),
-                    '24_hours' => $day['24_hours']->value(),
-                    'closed' => $day['closed']->value(),
+                    'enabled' => $day['enabled'],
+                    'weekday' => $day['weekday'],
+                    'start_time' => $this->formatDate($day['start_time']),
+                    'end_time' => $this->formatDate($day['end_time']),
+                    '24_hours' => $day['24_hours'],
+                    'closed' => $day['closed'],
                 ];
             })
             ->filter(function($day) {
@@ -43,11 +43,11 @@ class BusinessHoursTags extends Tags
 
     public function exception()
     {
-        $days = collect($this->defaults['exceptions']->value())
+        $days = collect($this->defaults['exceptions'])
             ->first(function ($day) {
-                $is_enabled = $day['enable_date']->value();
-                $start_date = Carbon::create($day['start_date']->value());
-                $end_date = Carbon::create($day['end_date']->value());
+                $is_enabled = $day['enable_date'];
+                $start_date = Carbon::create($day['start_date']);
+                $end_date = Carbon::create($day['end_date']);
 
                 if (! $is_enabled) return false;
 
@@ -69,7 +69,7 @@ class BusinessHoursTags extends Tags
 
     public function exceptions(): array
     {
-        return $this->defaults['exceptions']->value();
+        return $this->defaults['exceptions'];
     }
 
     protected function isPast($day, $key): bool
@@ -125,7 +125,7 @@ class BusinessHoursTags extends Tags
     }
 
     protected function formatToTime($day) {
-        [$hour, $minute] = explode(':', $day->value());
+        [$hour, $minute] = explode(':', $day);
 
         return Carbon::createFromTime($hour, $minute);
     }

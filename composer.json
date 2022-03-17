@@ -15,5 +15,9 @@
                 "LuckyMedia\\BusinessHours\\ServiceProvider"
             ]
         }
+    },
+    "require": {
+        "php": "^7.4 || ^8.0 || ^8.1",
+        "statamic/cms": "3.3.*"
     }
 }
