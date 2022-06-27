@@ -62,7 +62,7 @@ Params:
 
 If you need to display the exeptions you can use the following:
 
-```
+```antlers
 {{ business_hours:exception }}
 
  {{ reason }}
@@ -94,7 +94,7 @@ Check the example below and the code snippet. Please keep in mind that the examp
 
 ![Screenshot 2022-02-08 at 13 21 11](https://user-images.githubusercontent.com/11158157/152985979-aec8c318-7774-419d-b591-c44a66ab544a.png)
 
-```
+```antlers
 <div>
     {{ business_hours:exception }}
         <div class="w-full p-5 mb-5 text-center text-white bg-red-600 rounded">
